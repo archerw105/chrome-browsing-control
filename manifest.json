@@ -1,0 +1,16 @@
+{
+    "name": "Browsing Control",
+    "version": "1.0.0",
+    "description": "Fine-grain controls on your browse time",
+    "manifest_version": 3,
+    "author": "Archer Wang",
+    "content_scripts": [{
+        "js": ["content.js"],
+        "run_at": "document_idle",
+        "matches": ["http://*/*", "https://*/*"]
+    }],
+    "action":{
+        "default_popup": "index.html",
+        "default_title": "Browsing Control"
+    }
+}
